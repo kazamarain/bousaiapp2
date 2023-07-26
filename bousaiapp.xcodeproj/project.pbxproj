@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9DA2AE1D2A713555001FCF03 /* bousaiappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2AE1C2A713555001FCF03 /* bousaiappApp.swift */; };
+		9DA2AE1F2A713555001FCF03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2AE1E2A713555001FCF03 /* ContentView.swift */; };
+		9DA2AE212A713557001FCF03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA2AE202A713557001FCF03 /* Assets.xcassets */; };
+		9DA2AE242A713557001FCF03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA2AE232A713557001FCF03 /* Preview Assets.xcassets */; };
+		9DA2AE262A713557001FCF03 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2AE252A713557001FCF03 /* Persistence.swift */; };
+		9DA2AE292A713557001FCF03 /* bousaiapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2AE272A713557001FCF03 /* bousaiapp.xcdatamodeld */; };
+		9DA2AE332A713557001FCF03 /* bousaiappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2AE322A713557001FCF03 /* bousaiappTests.swift */; };
+		9DA2AE3D2A713557001FCF03 /* bousaiappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2AE3C2A713557001FCF03 /* bousaiappUITests.swift */; };
+		9DA2AE3F2A713557001FCF03 /* bousaiappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2AE3E2A713557001FCF03 /* bousaiappUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9DA2AE2F2A713557001FCF03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DA2AE112A713555001FCF03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DA2AE182A713555001FCF03;
+			remoteInfo = bousaiapp;
+		};
+		9DA2AE392A713557001FCF03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DA2AE112A713555001FCF03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DA2AE182A713555001FCF03;
+			remoteInfo = bousaiapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9DA2AE192A713555001FCF03 /* bousaiapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bousaiapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DA2AE1C2A713555001FCF03 /* bousaiappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bousaiappApp.swift; sourceTree = "<group>"; };
+		9DA2AE1E2A713555001FCF03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9DA2AE202A713557001FCF03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9DA2AE232A713557001FCF03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9DA2AE252A713557001FCF03 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		9DA2AE282A713557001FCF03 /* bousaiapp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = bousaiapp.xcdatamodel; sourceTree = "<group>"; };
+		9DA2AE2E2A713557001FCF03 /* bousaiappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bousaiappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DA2AE322A713557001FCF03 /* bousaiappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bousaiappTests.swift; sourceTree = "<group>"; };
+		9DA2AE382A713557001FCF03 /* bousaiappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bousaiappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DA2AE3C2A713557001FCF03 /* bousaiappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bousaiappUITests.swift; sourceTree = "<group>"; };
+		9DA2AE3E2A713557001FCF03 /* bousaiappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bousaiappUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9DA2AE162A713555001FCF03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DA2AE2B2A713557001FCF03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DA2AE352A713557001FCF03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9DA2AE102A713555001FCF03 = {
+			isa = PBXGroup;
+			children = (
+				9DA2AE1B2A713555001FCF03 /* bousaiapp */,
+				9DA2AE312A713557001FCF03 /* bousaiappTests */,
+				9DA2AE3B2A713557001FCF03 /* bousaiappUITests */,
+				9DA2AE1A2A713555001FCF03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9DA2AE1A2A713555001FCF03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DA2AE192A713555001FCF03 /* bousaiapp.app */,
+				9DA2AE2E2A713557001FCF03 /* bousaiappTests.xctest */,
+				9DA2AE382A713557001FCF03 /* bousaiappUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9DA2AE1B2A713555001FCF03 /* bousaiapp */ = {
+			isa = PBXGroup;
+			children = (
+				9DA2AE1C2A713555001FCF03 /* bousaiappApp.swift */,
+				9DA2AE1E2A713555001FCF03 /* ContentView.swift */,
+				9DA2AE202A713557001FCF03 /* Assets.xcassets */,
+				9DA2AE252A713557001FCF03 /* Persistence.swift */,
+				9DA2AE272A713557001FCF03 /* bousaiapp.xcdatamodeld */,
+				9DA2AE222A713557001FCF03 /* Preview Content */,
+			);
+			path = bousaiapp;
+			sourceTree = "<group>";
+		};
+		9DA2AE222A713557001FCF03 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9DA2AE232A713557001FCF03 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9DA2AE312A713557001FCF03 /* bousaiappTests */ = {
+			isa = PBXGroup;
+			children = (
+				9DA2AE322A713557001FCF03 /* bousaiappTests.swift */,
+			);
+			path = bousaiappTests;
+			sourceTree = "<group>";
+		};
+		9DA2AE3B2A713557001FCF03 /* bousaiappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9DA2AE3C2A713557001FCF03 /* bousaiappUITests.swift */,
+				9DA2AE3E2A713557001FCF03 /* bousaiappUITestsLaunchTests.swift */,
+			);
+			path = bousaiappUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9DA2AE182A713555001FCF03 /* bousaiapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DA2AE422A713557001FCF03 /* Build configuration list for PBXNativeTarget "bousaiapp" */;
+			buildPhases = (
+				9DA2AE152A713555001FCF03 /* Sources */,
+				9DA2AE162A713555001FCF03 /* Frameworks */,
+				9DA2AE172A713555001FCF03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bousaiapp;
+			productName = bousaiapp;
+			productReference = 9DA2AE192A713555001FCF03 /* bousaiapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9DA2AE2D2A713557001FCF03 /* bousaiappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DA2AE452A713557001FCF03 /* Build configuration list for PBXNativeTarget "bousaiappTests" */;
+			buildPhases = (
+				9DA2AE2A2A713557001FCF03 /* Sources */,
+				9DA2AE2B2A713557001FCF03 /* Frameworks */,
+				9DA2AE2C2A713557001FCF03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DA2AE302A713557001FCF03 /* PBXTargetDependency */,
+			);
+			name = bousaiappTests;
+			productName = bousaiappTests;
+			productReference = 9DA2AE2E2A713557001FCF03 /* bousaiappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9DA2AE372A713557001FCF03 /* bousaiappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DA2AE482A713557001FCF03 /* Build configuration list for PBXNativeTarget "bousaiappUITests" */;
+			buildPhases = (
+				9DA2AE342A713557001FCF03 /* Sources */,
+				9DA2AE352A713557001FCF03 /* Frameworks */,
+				9DA2AE362A713557001FCF03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DA2AE3A2A713557001FCF03 /* PBXTargetDependency */,
+			);
+			name = bousaiappUITests;
+			productName = bousaiappUITests;
+			productReference = 9DA2AE382A713557001FCF03 /* bousaiappUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9DA2AE112A713555001FCF03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					9DA2AE182A713555001FCF03 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					9DA2AE2D2A713557001FCF03 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 9DA2AE182A713555001FCF03;
+					};
+					9DA2AE372A713557001FCF03 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 9DA2AE182A713555001FCF03;
+					};
+				};
+			};
+			buildConfigurationList = 9DA2AE142A713555001FCF03 /* Build configuration list for PBXProject "bousaiapp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9DA2AE102A713555001FCF03;
+			productRefGroup = 9DA2AE1A2A713555001FCF03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DA2AE182A713555001FCF03 /* bousaiapp */,
+				9DA2AE2D2A713557001FCF03 /* bousaiappTests */,
+				9DA2AE372A713557001FCF03 /* bousaiappUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9DA2AE172A713555001FCF03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DA2AE242A713557001FCF03 /* Preview Assets.xcassets in Resources */,
+				9DA2AE212A713557001FCF03 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DA2AE2C2A713557001FCF03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DA2AE362A713557001FCF03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9DA2AE152A713555001FCF03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DA2AE262A713557001FCF03 /* Persistence.swift in Sources */,
+				9DA2AE1F2A713555001FCF03 /* ContentView.swift in Sources */,
+				9DA2AE292A713557001FCF03 /* bousaiapp.xcdatamodeld in Sources */,
+				9DA2AE1D2A713555001FCF03 /* bousaiappApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DA2AE2A2A713557001FCF03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DA2AE332A713557001FCF03 /* bousaiappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DA2AE342A713557001FCF03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DA2AE3D2A713557001FCF03 /* bousaiappUITests.swift in Sources */,
+				9DA2AE3F2A713557001FCF03 /* bousaiappUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9DA2AE302A713557001FCF03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DA2AE182A713555001FCF03 /* bousaiapp */;
+			targetProxy = 9DA2AE2F2A713557001FCF03 /* PBXContainerItemProxy */;
+		};
+		9DA2AE3A2A713557001FCF03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DA2AE182A713555001FCF03 /* bousaiapp */;
+			targetProxy = 9DA2AE392A713557001FCF03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9DA2AE402A713557001FCF03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9DA2AE412A713557001FCF03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9DA2AE432A713557001FCF03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"bousaiapp/Preview Content\"";
+				DEVELOPMENT_TEAM = XUUJA24ZA9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mat-study.bousaiapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9DA2AE442A713557001FCF03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"bousaiapp/Preview Content\"";
+				DEVELOPMENT_TEAM = XUUJA24ZA9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mat-study.bousaiapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9DA2AE462A713557001FCF03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XUUJA24ZA9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mat-study.bousaiappTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bousaiapp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/bousaiapp";
+			};
+			name = Debug;
+		};
+		9DA2AE472A713557001FCF03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XUUJA24ZA9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mat-study.bousaiappTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bousaiapp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/bousaiapp";
+			};
+			name = Release;
+		};
+		9DA2AE492A713557001FCF03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XUUJA24ZA9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mat-study.bousaiappUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = bousaiapp;
+			};
+			name = Debug;
+		};
+		9DA2AE4A2A713557001FCF03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XUUJA24ZA9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mat-study.bousaiappUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = bousaiapp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9DA2AE142A713555001FCF03 /* Build configuration list for PBXProject "bousaiapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DA2AE402A713557001FCF03 /* Debug */,
+				9DA2AE412A713557001FCF03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DA2AE422A713557001FCF03 /* Build configuration list for PBXNativeTarget "bousaiapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DA2AE432A713557001FCF03 /* Debug */,
+				9DA2AE442A713557001FCF03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DA2AE452A713557001FCF03 /* Build configuration list for PBXNativeTarget "bousaiappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DA2AE462A713557001FCF03 /* Debug */,
+				9DA2AE472A713557001FCF03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DA2AE482A713557001FCF03 /* Build configuration list for PBXNativeTarget "bousaiappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DA2AE492A713557001FCF03 /* Debug */,
+				9DA2AE4A2A713557001FCF03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9DA2AE272A713557001FCF03 /* bousaiapp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9DA2AE282A713557001FCF03 /* bousaiapp.xcdatamodel */,
+			);
+			currentVersion = 9DA2AE282A713557001FCF03 /* bousaiapp.xcdatamodel */;
+			path = bousaiapp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9DA2AE112A713555001FCF03 /* Project object */;
+}
