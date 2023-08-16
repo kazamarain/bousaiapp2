@@ -4,11 +4,27 @@ import Combine
 import UIKit
 import MapKit
 
-class MapViewModel: ObservableObject {
+class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     @Published var coordinate: CLLocationCoordinate2D
 
-    init(coordinate: CLLocationCoordinate2D) {
-        self.coordinate = coordinate
+    private var locationManager = CLLocationManager()
+
+    override init() {
+        self.coordinate = CLLocationCoordinate2D(latitude: 37.7749, longitude: -122.4194)
+        super.init()
+        
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.startUpdatingLocation()
+    }
+
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.last?.coordinate {
+            DispatchQueue.main.async {
+                self.coordinate = location
+            }
+        }
     }
 }
 
@@ -42,8 +58,8 @@ struct MapViewRepresentable: UIViewRepresentable {
 }
 
 struct ContentView: View {
-    @StateObject private var viewModel = MapViewModel(coordinate: CLLocationCoordinate2D(latitude: 37.7749, longitude: -122.4194))
-    
+    @StateObject private var viewModel = MapViewModel()
+
     var body: some View {
         MapViewRepresentable(viewModel: viewModel)
     }
