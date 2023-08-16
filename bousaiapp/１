@@ -1,0 +1,38 @@
+//
+//  bousaiappApp.swift
+//  bousaiapp
+//
+//  Created by ユウ・カザマ on 2023/07/26.
+//
+
+import SwiftUI
+
+@main
+struct bousaiappApp: App {
+    let persistenceController = PersistenceController.shared
+
+    var body: some Scene {
+        WindowGroup {
+            MainMapView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+        }
+    }
+}
+
+
+
+class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+
+    var window: UIWindow?
+    let locationViewModel = LocationViewModel() // LocationViewModelのインスタンスを作成
+
+    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        // LocationViewModelを環境オブジェクトとして使用するSwiftUIビューを作成します。
+        let contentView = ContentView()
+            .environmentObject(locationViewModel) // LocationViewModelを環境オブジェクトとして設定
+
+        // 他のコード...
+    }
+
+    // 他のSceneDelegateクラスのコード...
+}

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9DA2AE1D2A713555001FCF03 /* bousaiappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2AE1C2A713555001FCF03 /* bousaiappApp.swift */; };
+		9DA2AE1D2A713555001FCF03 /* １ in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2AE1C2A713555001FCF03 /* １ */; };
 		9DA2AE1F2A713555001FCF03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2AE1E2A713555001FCF03 /* ContentView.swift */; };
 		9DA2AE212A713557001FCF03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA2AE202A713557001FCF03 /* Assets.xcassets */; };
 		9DA2AE242A713557001FCF03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA2AE232A713557001FCF03 /* Preview Assets.xcassets */; };
@@ -16,6 +16,10 @@
 		9DA2AE332A713557001FCF03 /* bousaiappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2AE322A713557001FCF03 /* bousaiappTests.swift */; };
 		9DA2AE3D2A713557001FCF03 /* bousaiappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2AE3C2A713557001FCF03 /* bousaiappUITests.swift */; };
 		9DA2AE3F2A713557001FCF03 /* bousaiappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2AE3E2A713557001FCF03 /* bousaiappUITestsLaunchTests.swift */; };
+		9DA2AE4C2A7135A7001FCF03 /* MainMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2AE4B2A7135A7001FCF03 /* MainMapView.swift */; };
+		9DA2AE532A7A5257001FCF03 /* LocationViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2AE522A7A5257001FCF03 /* LocationViewModal.swift */; };
+		9DA2AE552A7A528B001FCF03 /* RequestLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2AE542A7A528B001FCF03 /* RequestLocationView.swift */; };
+		9DA2AE572A7A529C001FCF03 /* TrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2AE562A7A529C001FCF03 /* TrackingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +41,7 @@
 
 /* Begin PBXFileReference section */
 		9DA2AE192A713555001FCF03 /* bousaiapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bousaiapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DA2AE1C2A713555001FCF03 /* bousaiappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bousaiappApp.swift; sourceTree = "<group>"; };
+		9DA2AE1C2A713555001FCF03 /* １ */ = {isa = PBXFileReference; lastKnownFileType = text; path = "１"; sourceTree = "<group>"; };
 		9DA2AE1E2A713555001FCF03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9DA2AE202A713557001FCF03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DA2AE232A713557001FCF03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -48,6 +52,11 @@
 		9DA2AE382A713557001FCF03 /* bousaiappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bousaiappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA2AE3C2A713557001FCF03 /* bousaiappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bousaiappUITests.swift; sourceTree = "<group>"; };
 		9DA2AE3E2A713557001FCF03 /* bousaiappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bousaiappUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9DA2AE4B2A7135A7001FCF03 /* MainMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapView.swift; sourceTree = "<group>"; };
+		9DA2AE4D2A7A4B17001FCF03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9DA2AE522A7A5257001FCF03 /* LocationViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModal.swift; sourceTree = "<group>"; };
+		9DA2AE542A7A528B001FCF03 /* RequestLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLocationView.swift; sourceTree = "<group>"; };
+		9DA2AE562A7A529C001FCF03 /* TrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +107,13 @@
 		9DA2AE1B2A713555001FCF03 /* bousaiapp */ = {
 			isa = PBXGroup;
 			children = (
-				9DA2AE1C2A713555001FCF03 /* bousaiappApp.swift */,
+				9DA2AE522A7A5257001FCF03 /* LocationViewModal.swift */,
+				9DA2AE4D2A7A4B17001FCF03 /* Info.plist */,
+				9DA2AE1C2A713555001FCF03 /* １ */,
 				9DA2AE1E2A713555001FCF03 /* ContentView.swift */,
+				9DA2AE542A7A528B001FCF03 /* RequestLocationView.swift */,
+				9DA2AE562A7A529C001FCF03 /* TrackingView.swift */,
+				9DA2AE4B2A7135A7001FCF03 /* MainMapView.swift */,
 				9DA2AE202A713557001FCF03 /* Assets.xcassets */,
 				9DA2AE252A713557001FCF03 /* Persistence.swift */,
 				9DA2AE272A713557001FCF03 /* bousaiapp.xcdatamodeld */,
@@ -266,7 +280,11 @@
 				9DA2AE262A713557001FCF03 /* Persistence.swift in Sources */,
 				9DA2AE1F2A713555001FCF03 /* ContentView.swift in Sources */,
 				9DA2AE292A713557001FCF03 /* bousaiapp.xcdatamodeld in Sources */,
-				9DA2AE1D2A713555001FCF03 /* bousaiappApp.swift in Sources */,
+				9DA2AE572A7A529C001FCF03 /* TrackingView.swift in Sources */,
+				9DA2AE552A7A528B001FCF03 /* RequestLocationView.swift in Sources */,
+				9DA2AE532A7A5257001FCF03 /* LocationViewModal.swift in Sources */,
+				9DA2AE4C2A7135A7001FCF03 /* MainMapView.swift in Sources */,
+				9DA2AE1D2A713555001FCF03 /* １ in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,7 +446,9 @@
 				DEVELOPMENT_TEAM = XUUJA24ZA9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = bousaiapp/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "位置情報の使用を許可しますか？";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -457,7 +477,9 @@
 				DEVELOPMENT_TEAM = XUUJA24ZA9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = bousaiapp/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "位置情報の使用を許可しますか？";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
