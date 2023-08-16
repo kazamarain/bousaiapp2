@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D49823E2A8CCD5D005A0A84 /* UserLocationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D49823D2A8CCD5D005A0A84 /* UserLocationMapView.swift */; };
+		9D4982402A8CCF4F005A0A84 /* bousaiappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D49823F2A8CCF4F005A0A84 /* bousaiappApp.swift */; };
 		9DA2AE1D2A713555001FCF03 /* １ in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2AE1C2A713555001FCF03 /* １ */; };
 		9DA2AE1F2A713555001FCF03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2AE1E2A713555001FCF03 /* ContentView.swift */; };
 		9DA2AE212A713557001FCF03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA2AE202A713557001FCF03 /* Assets.xcassets */; };
@@ -18,8 +20,6 @@
 		9DA2AE3F2A713557001FCF03 /* bousaiappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2AE3E2A713557001FCF03 /* bousaiappUITestsLaunchTests.swift */; };
 		9DA2AE4C2A7135A7001FCF03 /* MainMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2AE4B2A7135A7001FCF03 /* MainMapView.swift */; };
 		9DA2AE532A7A5257001FCF03 /* LocationViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2AE522A7A5257001FCF03 /* LocationViewModal.swift */; };
-		9DA2AE552A7A528B001FCF03 /* RequestLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2AE542A7A528B001FCF03 /* RequestLocationView.swift */; };
-		9DA2AE572A7A529C001FCF03 /* TrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2AE562A7A529C001FCF03 /* TrackingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D49823D2A8CCD5D005A0A84 /* UserLocationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationMapView.swift; sourceTree = "<group>"; };
+		9D49823F2A8CCF4F005A0A84 /* bousaiappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bousaiappApp.swift; sourceTree = "<group>"; };
 		9DA2AE192A713555001FCF03 /* bousaiapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bousaiapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA2AE1C2A713555001FCF03 /* １ */ = {isa = PBXFileReference; lastKnownFileType = text; path = "１"; sourceTree = "<group>"; };
 		9DA2AE1E2A713555001FCF03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,8 +57,6 @@
 		9DA2AE4B2A7135A7001FCF03 /* MainMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapView.swift; sourceTree = "<group>"; };
 		9DA2AE4D2A7A4B17001FCF03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9DA2AE522A7A5257001FCF03 /* LocationViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModal.swift; sourceTree = "<group>"; };
-		9DA2AE542A7A528B001FCF03 /* RequestLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLocationView.swift; sourceTree = "<group>"; };
-		9DA2AE562A7A529C001FCF03 /* TrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,9 +110,9 @@
 				9DA2AE522A7A5257001FCF03 /* LocationViewModal.swift */,
 				9DA2AE4D2A7A4B17001FCF03 /* Info.plist */,
 				9DA2AE1C2A713555001FCF03 /* １ */,
+				9D49823F2A8CCF4F005A0A84 /* bousaiappApp.swift */,
 				9DA2AE1E2A713555001FCF03 /* ContentView.swift */,
-				9DA2AE542A7A528B001FCF03 /* RequestLocationView.swift */,
-				9DA2AE562A7A529C001FCF03 /* TrackingView.swift */,
+				9D49823D2A8CCD5D005A0A84 /* UserLocationMapView.swift */,
 				9DA2AE4B2A7135A7001FCF03 /* MainMapView.swift */,
 				9DA2AE202A713557001FCF03 /* Assets.xcassets */,
 				9DA2AE252A713557001FCF03 /* Persistence.swift */,
@@ -277,11 +277,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D49823E2A8CCD5D005A0A84 /* UserLocationMapView.swift in Sources */,
 				9DA2AE262A713557001FCF03 /* Persistence.swift in Sources */,
 				9DA2AE1F2A713555001FCF03 /* ContentView.swift in Sources */,
 				9DA2AE292A713557001FCF03 /* bousaiapp.xcdatamodeld in Sources */,
-				9DA2AE572A7A529C001FCF03 /* TrackingView.swift in Sources */,
-				9DA2AE552A7A528B001FCF03 /* RequestLocationView.swift in Sources */,
+				9D4982402A8CCF4F005A0A84 /* bousaiappApp.swift in Sources */,
 				9DA2AE532A7A5257001FCF03 /* LocationViewModal.swift in Sources */,
 				9DA2AE4C2A7135A7001FCF03 /* MainMapView.swift in Sources */,
 				9DA2AE1D2A713555001FCF03 /* １ in Sources */,

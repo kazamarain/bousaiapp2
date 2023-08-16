@@ -1,76 +1,25 @@
+
 import SwiftUI
-import CoreLocation
-import Combine
-import UIKit
-import MapKit
-
-class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
-    @Published var coordinate: CLLocationCoordinate2D
-
-    private var locationManager = CLLocationManager()
-
-    override init() {
-        self.coordinate = CLLocationCoordinate2D(latitude: 37.7749, longitude: -122.4194)
-        super.init()
-        
-        locationManager.delegate = self
-        locationManager.requestWhenInUseAuthorization()
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.startUpdatingLocation()
-    }
-
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if let location = locations.last?.coordinate {
-            DispatchQueue.main.async {
-                self.coordinate = location
-            }
-        }
-    }
-}
-
-struct MapViewRepresentable: UIViewRepresentable {
-    @ObservedObject var viewModel: MapViewModel
-
-    func makeUIView(context: Context) -> MKMapView {
-        let mapView = MKMapView(frame: .zero)
-        mapView.delegate = context.coordinator
-        return mapView
-    }
-
-    func updateUIView(_ uiView: MKMapView, context: Context) {
-        let coordinate = viewModel.coordinate
-        uiView.setCenter(coordinate, animated: true)
-    }
-
-    func makeCoordinator() -> Coordinator {
-        Coordinator(self)
-    }
-
-    class Coordinator: NSObject, MKMapViewDelegate {
-        var parent: MapViewRepresentable
-
-        init(_ parent: MapViewRepresentable) {
-            self.parent = parent
-        }
-
-        // Other MKMapViewDelegate methods...
-    }
-}
 
 struct ContentView: View {
-    @StateObject private var viewModel = MapViewModel()
-
+    
+    @State private var selection: Int = 1
+    
     var body: some View {
-        MapViewRepresentable(viewModel: viewModel)
-    }
-}
-
-@main
-struct YourApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
+        TabView(selection: $selection) {
+            
+            UserLocationMapView()
+                .tabItem {
+                    Label("UserLocation", systemImage: "location.fill")
+                }.tag(2)
+            
         }
     }
 }
-
+        
+        
+        struct ContentView_Previews: PreviewProvider {
+            static var previews: some View {
+                ContentView()
+            }
+        }
